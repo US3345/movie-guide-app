@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background:linear-gradient(135deg,#4203a9,#90bafc);
+    min-height: 100vh;
+}
+.nav{
+    background-color: #232f3e;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+.search-opr input,button{
+    padding: 5px 10px;
+    border-radius: 3px 0 0 3px;
+    border: none;
+    font-size: 18px;
+}
+.search-opr button{
+    background: #f5c518;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.search-opr button:hover{
+    background: rgb(193, 146, 146);
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+min-height: 85vh;
+
+
+}
+footer{
+    text-align: center;
+     background-color: #232f3e;
+    color: white;
+    padding-block: 20px;
+    font-size: 20px;
+    padding-block: 30px;
+}
+.movie-container{
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 80%;
+    border-radius: 5px;
+   align-items: center;
+   justify-content: center;
+
+}
+.movie-poster img{
+    height: 450px;
+    margin-right: 30px;
+    border-radius: 5px;
+    
+}
+.movie-info {
+    padding-inline: 20px;
+}
+.movie-info h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0 12px 0px;
+}
+.genre-tag{
+background:#2f3e46;
+color:white;
+padding:5px 10px;
+border-radius:6px;
+margin-right:6px;
+margin-bottom: 15px;
+margin-top: 10px;
+font-size:18px;
+display:inline-block;
+}
+.movie-info{
+max-width:500px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.movie-info p{
+margin:10px 0;
+font-size:16px;
+line-height:1.6;
+color:#333;
+}
+
+.movie-info strong{
+color:#111;
+font-weight:600;
+}
+
+.movie-info h2{
+font-size:32px;
+margin-bottom:15px;
+}
+.movie-info p:last-child{
+background:#f5f5f5;
+padding:12px;
+border-radius:6px;
+font-style:italic;
+}
+.movie-info p{
+display:flex;
+gap:8px;
+align-items:flex-start;
+}
+.movie-container.noBackground{
+background:none;
+box-shadow:none;
+}
+/* Responsive */
+@media screen and (max-width:950px){
+    .movie-container{
+        flex-direction: column;
+    }
+    .movie-poster img{
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+    }
+    .movie-info{
+        padding-inline: 30px;
+    }
+}
